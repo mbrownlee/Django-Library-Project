@@ -1,3 +1,11 @@
 {
-    "python.pythonPath": "../libraryenv/bin/python"
+    "python.pythonPath": "../libraryenv/bin/python",
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:library}/db.sqlite3",
+            "driver": "SQLite",
+            "name": "library",
+            "previewLimit": 50
+        }
+    ]
 }
