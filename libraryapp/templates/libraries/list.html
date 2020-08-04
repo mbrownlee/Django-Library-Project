@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Library Branches</title>
+  </head>
+  <body>
+    <h1>Library Branches</h1>
+
+    <ol>
+    {% for library in all_libraries %}
+        <li>
+           <h2> {{ library.title }} </h2>
+            <h3> {{ library.address }} </h3>
+            
+        </li>
+    {% endfor %}
+    </ol>
+  </body>
+</html>

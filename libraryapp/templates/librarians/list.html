@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Librarians</title>
+  </head>
+  <body>
+    <h1>Librarians</h1>
+
+    <ol>
+    {% for librarian in all_librarians %}
+        <li>
+           <h2> {{ librarian.first_name }} {{ librarian.last_name }} </h2>
+            
+            
+        </li>
+    {% endfor %}
+    </ol>
+  </body>
+</html>
