@@ -11,7 +11,8 @@
     <ol>
     {% for librarian in all_librarians %}
         <li>
-           <h2> {{ librarian.first_name }} {{ librarian.last_name }} </h2>
+          <a href="{% url 'libraryapp:librarian' librarian.id %}"> <h2> {{ librarian.first_name }} {{ librarian.last_name }} </h2> </a> works at {{ librarian.location }}.
+          
             
             
         </li>
