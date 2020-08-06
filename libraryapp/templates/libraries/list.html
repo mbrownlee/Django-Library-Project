@@ -1,3 +1,4 @@
+{% extends 'shared/base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -6,6 +7,7 @@
     <title>Library Branches</title>
   </head>
   <body>
+{% block content %}
     <h1>Library Branches</h1>
 
     <ol>
@@ -19,5 +21,9 @@
         </li>
     {% endfor %}
     </ol>
+{% endblock %}
   </body>
 </html>
+
+
+
