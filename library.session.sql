@@ -7,3 +7,16 @@ select
 
 select * from libraryapp_librarian;
 
+SELECT
+	li.id library_id,
+	li.title,
+	li.address,
+	b.id book_id,
+	b.title,
+	b.author,
+	b.year_published,
+	b.isbn
+FROM libraryapp_library li
+JOIN libraryapp_book b ON li.id = b.location_id
+;
+
